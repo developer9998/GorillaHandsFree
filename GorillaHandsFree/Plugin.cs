@@ -2,11 +2,11 @@
 using HarmonyLib;
 using Utilla.Attributes;
 
-namespace GorillaDistantHands
+namespace GorillaHandsFree
 {
     [ModdedGamemode, BepInDependency("org.legoandmars.gorillatag.utilla")]
     [BepInPlugin(Constants.GUID, Constants.Name, Constants.Version)]
-    public class Plugin : BaseUnityPlugin
+    internal class Plugin : BaseUnityPlugin
     {
         public static bool Enabled, InModdedRoom;
 

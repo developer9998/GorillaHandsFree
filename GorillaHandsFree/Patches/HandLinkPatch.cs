@@ -1,6 +1,6 @@
 ﻿using HarmonyLib;
 
-namespace GorillaDistantHands.Patches
+namespace GorillaHandsFree.Patches
 {
     [HarmonyPatch(typeof(HandLink), nameof(HandLink.SliceUpdate))]
     internal class HandLinkPatch
