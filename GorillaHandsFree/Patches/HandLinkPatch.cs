@@ -2,10 +2,10 @@
 
 namespace GorillaHandsFree.Patches
 {
-    [HarmonyPatch(typeof(HandLink), nameof(HandLink.SliceUpdate))]
+    [HarmonyPatch(typeof(TakeMyHand_HandLink), nameof(TakeMyHand_HandLink.SliceUpdate))]
     internal class HandLinkPatch
     {
-        public static bool Prefix(HandLink __instance)
+        public static bool Prefix(TakeMyHand_HandLink __instance)
         {
             if (Plugin.Enabled && Plugin.InModdedRoom)
             {
